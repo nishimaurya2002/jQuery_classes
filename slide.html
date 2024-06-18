@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            height:80px;
+            width:100%;
+            font-size: 30px;
+            background-color:#808000;
+            color:#fff;
+            border: 2px solid #000;
+        }
+        .box{
+            width:100%;
+            height:100px;
+            background-color: rgb(255, 149, 0);
+            border: 2px solid #000;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Slide 1</button>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis voluptatibus cumque omnis in repellat expedita molestiae dolor perferendis recusandae iste maxime quam amet dolores quasi eos illum veniam aspernatur quaerat blanditiis magnam vero dignissimos at, asperiores soluta. Fugit, earum vero ipsum nihil nulla magnam culpa nam error cupiditate ad dolores, cumque aspernatur assumenda ipsa, voluptate rerum impedit. Voluptas ipsum aperiam sequi nulla illum impedit quaerat similique. Dolore, eveniet provident! Ad, architecto ex praesentium illum, deserunt tempore illo facere, minima assumenda blanditiis fugit delectus laborum distinctio quod eum sed? Optio sapiente saepe nam! Adipisci ullam quidem dignissimos excepturi, omnis iure itaque!</p>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+       $("#btn").click(function(){
+        $(".box").slideUp("slow");
+       });
+       
+       $("#btn").click(function(){
+        $(".box").slideDown("slow");
+       });
+    // $("#btn").click(function(){
+    //     $(".box").slideToggle("slow");
+    //    })
+
+//----------------------------- stop() function--------------------------------------------------
+
+    // $("#btn").click(function(){
+    //     $(".box").stop();
+    // });
+    </script>
+</body>
+</html>

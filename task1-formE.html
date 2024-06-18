@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #form{
+             width:400px;
+             min-height:400px;
+             margin: 100px auto;
+             padding: 20px;
+             border:5px solid #400040;
+            background: rgb(143,143,249);
+            background: -moz-linear-gradient(340deg, rgba(143,143,249,1) 22%, rgba(167,167,167,1) 71%, rgba(0,212,255,1) 100%);
+            background: -webkit-linear-gradient(340deg, rgba(143,143,249,1) 22%, rgba(167,167,167,1) 71%, rgba(0,212,255,1) 100%);
+            background: linear-gradient(340deg, rgba(143,143,249,1) 22%, rgba(167,167,167,1) 71%, rgba(0,212,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8f8ff9",endColorstr="#00d4ff",GradientType=1);
+        }
+        #form h1{
+            color:#ef6006;
+            text-align: center;
+        }
+        input,select{
+            height:35px;
+            width:100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+         <h1>Form Event</h1>
+        Name <input type="text" id="name">
+        Father Name <input type="text" id="fname">
+        Email <input type="email" id="email">
+        Password <input type="password" id="pword">
+        Student Name <select name="" id="se">
+          <option value="">Rani</option>
+          <option value="">Rani</option>
+          <option value="">Rani</option>
+        </select>
+        <input type="submit" id="sub">
+     </form>
+     <script src="js/jquery.js"></script>
+     <script>
+         $(document).ready(function(){
+            $("#name").focus(function(){
+               $(this).css("background","#da70d6");
+            });
+
+            $("#name").blur(function(){
+                $(this).css("background","green");
+            });
+
+            $("#name").change(function(){
+                 $(this).css("color","#fff");
+            });
+
+            $("#name").select(function(){
+                 $(this).css("border","5px solid yellow");
+            });
+
+            $("#fname,#sub").focus(function(){
+               $(this).css("background","#4096f1");
+            });
+
+            $("#fname,#sub").blur(function(){
+               $(this).css("background","#da70d6");
+            });
+
+            $("#fname").change(function(){
+               $(this).css("border","5px solid  teal");
+            });
+
+            $("#fname").select(function(){
+               $(this).css("font-size","20px");
+            });
+
+            $("#email").focus(function(){
+               $(this).css("background","#f19f1c");
+            });
+
+            $("#email").blur(function(){
+               $(this).css("background","#408080");
+            });
+
+            $("#email").change(function(){
+               $(this).css("border","5px solid  pink");
+            });
+
+            $("#email").select(function(){
+               $(this).css("font-size","20px");
+               $(this).css("color","#fff");
+            });
+
+            
+            $("#pword").focus(function(){
+               $(this).css("background","#400040");
+            });
+
+            $("#pword").blur(function(){
+               $(this).css("background","#804040");
+            });
+
+            $("#pword").change(function(){
+               $(this).css("border","5px solid  yellow");
+            });
+
+            $("#pword").select(function(){
+               $(this).css("font-size","20px");
+               $(this).css("color","#fff");
+            });
+
+            $("#se").focus(function(){
+               $(this).css("background","#8ecc66");
+            });
+
+            $("#se").blur(function(){
+               $(this).css("background","#ce9178");
+            });
+
+            $("#se").change(function(){
+               $(this).css("border","5px solid  #fff");
+            });
+
+            $("#se").select(function(){
+               $(this).css("font-size","20px");
+               $(this).css("color","#fff");
+            });
+            $("#form").submit(function(){
+                alert("form is submit");
+            })
+         });
+     </script>
+</body>
+</html>

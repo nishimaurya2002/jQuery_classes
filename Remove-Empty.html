@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .outer{
+              width: 400px;
+              height:400px;
+              background-color: teal;
+        }
+        p{
+            padding: 50px;
+            color:#fff;
+        }
+        button{
+            margin-top: 20px;
+        }
+     </style>
+</head>
+<body>
+    <h1>Empty and Remove Method</h1>
+    <div class="outer">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae nesciunt architecto possimus a autem quam, quisquam sit iusto quibusdam!</p>
+    </div>
+    <button id="btn1">Empty</button>
+    <button id="btn2">Remove</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){//The empty method removes all child elements and content from the selected elements, but does not remove the selected elements themselves.
+                $(".outer").empty();
+                    
+            })
+        })
+        $(document).ready(function(){//The remove method removes the selected elements from the DOM, along with their child elements and content.
+            $("#btn2").click(function(){
+                $(".outer").remove();
+                   
+            })
+        })
+    </script>
+</body>
+</html>

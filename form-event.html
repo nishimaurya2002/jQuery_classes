@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #form{
+             width:400px;
+             height:400px;
+             margin: auto;
+             padding: 20px;
+        }
+        input,select{
+            height:35px;
+            width:100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+       Name <input type="text" id="name">
+       Father Name <input type="text" id="fname">
+       Email <input type="email" id="email">
+       student Name <select name="" id="se">
+         <option value="">Rani</option>
+         <option value="">Rani</option>
+         <option value="">Rani</option>
+       </select>
+       <input type="submit" id="sub">
+    </form>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#name").focus(function(){//get
+                let a=$(this).css("background","red");
+                $(this).css("color","#fff");
+                $(this).val("Nishi Maurya");// set value
+            });
+            // alert("focus is successfully");//set 
+            $("#name").blur(function(){
+                $(this).css("background","green");
+            });
+
+            $("#name").select(function(){
+                $(this).css("border","5px solid yellow");
+            });
+
+            $("#se").change(function(){
+                $(this).css("border","5px solid pink");
+                $(this).css("background","yellow");
+            });
+
+            $("#form").submit(function(){
+              confirm("are your sure?") ;
+            });
+        });
+    </script>
+</body>
+</html>

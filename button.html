@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="js/jquery.js"></script>//first way but not sutable -->
+</head>
+<body>
+    <p>Techsima solution private limited</p>
+    <button onclick="demo()">click</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        // $(document).ready(function(){    // jquery
+        //     $("button").click(function(){
+               
+        //         let para= $("p").text();
+        //         alert(para);
+        //     });
+        // })
+        function demo(){
+             let para=document.querySelector("p"); // javascript
+             let p=para.innerText;
+             alert(p);
+        }
+    </script>
+</body>
+</html>

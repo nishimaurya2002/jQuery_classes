@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="b1" class="b" style="width:200px; height:200px; background-color: lime; ">
+    </div>
+    <p>Code Your Way Upto The peak</p> -->
+    <ul>
+        <li>Rani</li>
+        <li>Nishi</li>
+        <li>Ruhi</li>
+        <li>Iski</li>
+    </ul>
+    <button>
+        click
+    </button> 
+    <script src="js/jquery.js"></script>
+    <script>
+        // $(function(){//get the value in html using js in id selector
+        //    $("#b1").click(function(){
+        //       alert("this message show");
+        //    })
+        // })
+
+        // $(function(){//get the value in html using js in class selector
+        //    $(".b").click(function(){
+        //       alert("color box open");
+        //    })
+        // })
+
+        // $(function(){//get the value in html using js in tag selector
+        //    $("div").click(function(){
+        //       alert("box open");
+        //    })
+        // })
+
+        // $(document).ready(function(){//get the value in html using js in universal selector
+        //     $("button").click(function(){
+        //         $("#b1,p").css("background","teal")
+        //     })
+        // })
+
+        $(document).ready(function(){//get the value in html using js in psuedo selector
+            $("button").click(function(){
+              $("ul li").css("fontSize","20px");
+            $("ul li:nth-child(2)").css("color","red");
+            $("ul li:nth-child(4)").css("color","green");
+            })
+        })
+    </script>
+</body>
+</html>

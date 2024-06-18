@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .outer{
+              width: 400px;
+              height:400px;
+              background-color: teal;
+        }
+        p{
+            padding: 50px;
+            color:#fff;
+        }
+        button{
+            margin-top: 20px;
+        }
+     </style>
+</head>
+<body>
+    <h1>Append and Prepend Method</h1>
+    <div class="outer">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae nesciunt architecto possimus a autem quam, quisquam sit iusto quibusdam!</p>
+    </div>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".outer").append("<i>Techsima<i>");//The append method inserts content at the end of the selected elements.
+                    $(".outer") .css("color","#fff")
+                    $(".outer") .css("font-size","20px")
+            })
+        })
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $(".outer").prepend("<i>Techsima<i>");//The prepend method inserts content at the beginning of the selected elements.
+                   
+            })
+        })
+    </script>
+</body>
+</html>
